@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%); 
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6rem;
+}
+
+.container{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;  
+}
+
+.double-card{
+    height:100%;
+}
+
+div {
+    width: 375px;
+    height: 275px;
+}
+
+div.card1{
+    background-color: white;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;   
+}
+
+div.card2{
+    background-color: hsl(218, 22%, 67%);
+    color: white;
+    
+}
+
+div.card3{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;   
+}
+
+h1, h2, p, ul{
+    padding: 1.5rem 0 0 2rem;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+}
+
+h2.first-card{
+    color: hsl(71, 73%, 54%);
+}
+
+p.main-p{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    max-width: 22rem;
+    
+}
+
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 19.5rem;
+    height: 3.2rem;
+    margin: 2rem 0 0 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+}
+
+li{
+    list-style: none;
+}

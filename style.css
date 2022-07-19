@@ -29,10 +29,8 @@ body{
 }
 
 main{
-    
     display: flex;
     margin: auto;
-
 }
 
 section{
