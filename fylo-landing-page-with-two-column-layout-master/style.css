@@ -144,6 +144,7 @@ body {
 .section02 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--Light-Grayish-Blue );
 }
 
 .image02-container {
@@ -223,3 +224,10 @@ body {
     color: white;
     background: var(--Bright-Blue)
 } 
+
+.footer-container {
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
