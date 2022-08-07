@@ -118,7 +118,7 @@ body {
    margin-top: 8rem;
 }
 
-.main-input {
+.section01-input {
     margin-top: 1rem;
 }
 
@@ -144,7 +144,6 @@ body {
 .section02 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--Light-Grayish-Blue);
 }
 
 .image02-container {
@@ -198,11 +197,18 @@ body {
 .section03 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--Desaturated-Blue);
+    color: white
+}
+
+.section03-content {
+    margin-top: 2rem;
 }
 
 .section03-input {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .email02 {
