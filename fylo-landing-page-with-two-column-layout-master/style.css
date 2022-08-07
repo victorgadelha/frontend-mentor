@@ -231,3 +231,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.footer-list01 {
+    grid-column: 1;
+}
+
+.footer-list02 {
+    grid-column: 2;
+}
+
+.footer-list03 {
+    grid-column: 3;
+}
+
+.footer-list04 {
+    grid-column: 4;
+}
