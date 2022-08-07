@@ -28,6 +28,12 @@
     --Font-Family-Body: 'Open Sans', sans-serif; /*- Weights: 400*/
 }
 
+header,
+section,
+footer {
+    padding: 3rem;
+}
+
 li{
     list-style: none;
 }
@@ -43,6 +49,8 @@ blockquote{
 
 h1,
 h2,
+h3,
+h4,
 header,
 span,
 button,
@@ -55,6 +63,14 @@ h1 {
     font-weight: 700;
 }
 
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
 p {
     max-width: 50rem;
     font-size: 1.5rem;
@@ -62,13 +78,18 @@ p {
     margin-top: 1.7rem;
 }
 
-h3 {
-    font-size: 1.2rem;
-}
+.email01 {
+    width: 28rem;
+    padding: 15px 0;
+} 
 
-h4 {
-    font-size: .6rem;
-}
+.button01 {
+    width: 15rem;
+    padding: 15px 0;
+    margin-left: .5rem;
+    color: white;
+    background: var(--Bright-Blue)
+} 
 
 body {
     width: 100%;
@@ -76,15 +97,11 @@ body {
     margin: 0 auto;
 }
 
-.all-content {
-    
-}
-
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height:10vh;
 }
 
 .header-list {
@@ -105,19 +122,6 @@ body {
     margin-top: 1rem;
 }
 
-.main-input .input-01 {
-    width: 28rem;
-    padding: 15px 0;
-} 
-
-.main-input .button-01 {
-    width: 15rem;
-    padding: 15px 0;
-    margin-left: .5rem;
-    color: white;
-    background: var(--Bright-Blue)
-} 
-
 .image01-container {
     width: 60rem;
 }
@@ -133,6 +137,8 @@ body {
 
 .image-detail {
     width: 100%;
+    position: relative;
+    top: .25rem;
 }
 
 .section02 {
@@ -141,21 +147,20 @@ body {
     background-color: var(--Light-Grayish-Blue);
 }
 
-.section02-content {
-    margin-top: 8rem;
- }
-
 .image02-container {
     width: 60rem;
+    margin-top: 3rem;
 }
 
 .image02-content {
     max-width: 100%;
 }
 
-span {
-    display: block;
+.fylo-link {
+    display: flex;
     margin-top: 1rem;
+    gap: .3rem;
+    text-decoration: underline;
 }
 
 .blockquote-container {
@@ -164,12 +169,13 @@ span {
     justify-content: center;
     background-color: white;
     margin-top: 2rem;
-    width: 22rem;
-    height: 12rem;
+    text-align: justify;
+    width: 27rem;
+    height: 22rem;
 }
 
-.blockquote-container P {
-    max-width: 20rem;
+.blockquote-container{
+    padding: 1rem;
 }
 
 .quote-kyleburton {
@@ -179,5 +185,35 @@ span {
 
 .image-kyleburton {
     border-radius: 50%;
-    width: 3rem;
+    width: 7rem;
 }
+
+.name-kyleburton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: .5rem;
+}
+
+.section03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section03-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.email02 {
+    width: 35rem;
+    padding: 15px 0;
+} 
+
+.button02 {
+    width: 15rem;
+    padding: 15px 0;
+    margin-top : .5rem;
+    color: white;
+    background: var(--Bright-Blue)
+} 
