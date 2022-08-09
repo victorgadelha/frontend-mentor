@@ -169,8 +169,7 @@ body {
     justify-content: center;
     background-color: white;
     margin-top: 2rem;
-    text-align: justify;
-    width: 27rem;
+    width: 32rem;
     height: 22rem;
 }
 
@@ -246,4 +245,8 @@ body {
 
 .footer-list04 {
     grid-column: 4;
+}
+
+.footer-container li{
+    margin-top: 1.2rem;
 }
