@@ -77,7 +77,7 @@ h4 {
     font-size: 1.1rem;
 }
 
-p {
+p:not(.blockquote-p) {
     max-width: 50rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -190,10 +190,24 @@ body {
     padding: 1rem;
 }
 
+.detail-container {
+    width: 2.2rem;
+}
+
+.detail-content {
+    width: 100%;
+}
+
 .quote-kyleburton {
     display: flex;
     margin-top: 0.5rem;
 }
+
+.blockquote-p {  
+    max-width: 50rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}  
 
 .image-kyleburton {
     border-radius: 50%;
