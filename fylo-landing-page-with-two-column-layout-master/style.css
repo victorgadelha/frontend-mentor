@@ -36,6 +36,7 @@ footer {
 
 li{
     list-style: none;
+    font-size: 1.3rem;
 }
 
 a{
@@ -63,6 +64,11 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 h3 {
     font-size: 1.8rem;
 }
@@ -78,18 +84,10 @@ p {
     margin-top: 1.7rem;
 }
 
-.email01 {
-    width: 28rem;
-    padding: 15px 0;
-} 
-
-.button01 {
-    width: 15rem;
-    padding: 15px 0;
-    margin-left: .5rem;
-    color: white;
-    background: var(--Bright-Blue)
-} 
+.email01::placeholder,
+.email02::placeholder {
+    font-size: 1.2rem;
+}
 
 body {
     width: 100%;
@@ -117,6 +115,20 @@ body {
 .section01-content {
    margin-top: 8rem;
 }
+
+.email01 {
+    width: 28rem;
+    padding: 15px 0;
+} 
+
+.button01 {
+    width: 15rem;
+    padding: 15px 0;
+    margin-left: .5rem;
+    color: white;
+    background: var(--Bright-Blue);
+    border: none;
+} 
 
 .section01-input {
     margin-top: 1rem;
@@ -161,6 +173,7 @@ body {
     margin-top: 1rem;
     gap: .3rem;
     text-decoration: underline;
+    color: #79b3ab;
 }
 
 .blockquote-container {
@@ -221,7 +234,8 @@ body {
     padding: 15px 0;
     margin-top : .5rem;
     color: white;
-    background: var(--Bright-Blue)
+    background: var(--Bright-Blue);
+    border: none;
 } 
 
 .footer-container {
@@ -244,9 +258,16 @@ body {
 }
 
 .footer-list04 {
+    display: flex;
     grid-column: 4;
+    gap: 2rem;
 }
 
-.footer-container li{
+.footer-container li {
     margin-top: 1.2rem;
+}
+
+.icon-phone,
+.icon-email {
+    margin-right: 1rem;
 }
