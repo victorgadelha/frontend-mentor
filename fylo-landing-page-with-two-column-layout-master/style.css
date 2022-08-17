@@ -109,16 +109,63 @@ body {
     gap: 3rem;
 }
 
+.hamburguer-menu {
+    display: none;
+
+}
+
 @media (max-width: 768px) {
+    .logo-header {
+        width: 8rem;
+        height: 2.5rem;
+    }
+
     .header-list {
+        position: absolute;
         display: none;
+        top: 18vh;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+        background-color: var(--Light-Grayish-Blue );
+        
     }
     
+    .header-list .active {
+        display: block;
+        left: 0;
+    }
+
     .hamburguer-menu {
         display: block;
         cursor: pointer;
+        height: 2.5rem;
     }
     
+    .header-list.active {
+        left: 0;
+    }
+
+    .nav-link {
+        padding: .5rem;
+    }
+
+    .hamburguer-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .bar {
         display: block;
         width: 25px;
@@ -172,7 +219,9 @@ body {
     }
 
     .image01-container {
-        width: 375px;
+        max-width: 17.5rem;
+        margin-bottom: -8rem;
+        margin-top: 2rem;
     }
     
     .main-first-h1 {
@@ -193,11 +242,11 @@ body {
     }
 
     .email01 {
-        width: 42rem;
+        width: 17.5rem;
     } 
 
     .button01 {
-        width: 42rem;
+        width: 17.5rem;
         margin: 1rem 0 0 0;
     } 
 }
@@ -243,7 +292,7 @@ body {
     justify-content: center;
     background-color: white;
     margin-top: 2rem;
-    width: 32rem;
+    max-width: 32rem;
     height: 22rem;
 }
 
@@ -289,7 +338,8 @@ body {
     }
 
     .image02-container {
-        width: 42rem;
+        max-width: 17.5rem;
+        margin-bottom: 3rem;
     }
 
     .main-second-h1 {
@@ -314,8 +364,20 @@ body {
     }
 
     .blockquote-container {
-        width: 42rem;
-        height: 22rem;
+        width: 17rem;
+        height: 32rem;
+    }
+
+    .image-kyleburton {
+        width: 6rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
     }
 }
 
@@ -373,11 +435,12 @@ body {
     }
 
     .email02 {
-        width: 42rem;
+        width: 17.5rem;
     }
 
     .button02 {
-        width: 42rem;
+        width: 17.5rem;
+        margin: 1rem 0 0 0
     }
 }
 .footer-container {
@@ -412,4 +475,22 @@ body {
 .icon-phone,
 .icon-email {
     margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list01 {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-list04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2.5rem;
+    }
 }
